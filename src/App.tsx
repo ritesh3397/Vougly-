@@ -19,6 +19,8 @@ import StepSection from './components/StepSection.tsx';
 import FeaturesGrid from './components/FeaturesGrid.tsx';
 import AIShowcase from './components/AIShowcase.tsx';
 import InteractiveWidgetBuilder from './components/InteractiveWidgetBuilder.tsx';
+import LaunchingSoonSection from './components/LaunchingSoonSection.tsx';
+import WaitlistSection from './components/WaitlistSection.tsx';
 import PricingSection from './components/PricingSection.tsx';
 import FAQSection from './components/FAQSection.tsx';
 import FinalCTA from './components/FinalCTA.tsx';
@@ -78,11 +80,17 @@ export default function App() {
         onOpenSubmissionModal={() => setIsModalOpen(true)} 
       />
 
+      {/* Launching Soon Testimony Panel */}
+      <LaunchingSoonSection />
+
       {/* Core Features Grid */}
       <FeaturesGrid />
 
       {/* AI Smart showcase section */}
       <AIShowcase />
+
+      {/* Waitlist Early Access */}
+      <WaitlistSection />
 
       {/* Pricing options */}
       <PricingSection onSelectPlan={(planName) => {

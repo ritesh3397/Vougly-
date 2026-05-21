@@ -93,6 +93,65 @@ export default function StepSection() {
 
         </div>
 
+        {/* Simple Workflow Visual: Collect ➔ Approve ➔ Publish */}
+        <div className="mt-16 p-6 rounded-2xl border border-white/5 bg-zinc-950/40 relative max-w-3xl mx-auto overflow-hidden">
+          <div className="absolute top-0 inset-x-0 h-[1.5px] bg-gradient-to-r from-transparent via-teal-500/20 to-transparent" />
+          <p className="text-center text-[10px] font-mono tracking-widest text-zinc-500 uppercase mb-6">Workflow Pipeline View</p>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 md:gap-4 relative z-10">
+            
+            {/* Step A: Collect */}
+            <div className="flex items-center gap-3 bg-zinc-900/60 pl-3 pr-4 py-2.5 rounded-xl border border-white/5 w-full sm:w-auto justify-center sm:justify-start">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-500/10 text-teal-400 font-mono text-xs font-bold border border-teal-500/20">
+                01
+              </span>
+              <div>
+                <p className="text-xs font-bold text-white font-mono">Collect</p>
+                <p className="text-[10px] text-zinc-500 font-sans leading-none mt-0.5">Via custom forms & links</p>
+              </div>
+            </div>
+
+            {/* Connector */}
+            <div className="hidden sm:flex items-center text-teal-400/35 font-semibold text-sm tracking-tighter animate-pulse select-none">
+              ────────➔
+            </div>
+            <div className="sm:hidden text-teal-400/35 animate-pulse text-sm select-none">
+              ▼
+            </div>
+
+            {/* Step B: Approve */}
+            <div className="flex items-center gap-3 bg-zinc-900/60 pl-3 pr-4 py-2.5 rounded-xl border border-teal-500/35 shadow-[0_0_15px_rgba(20,184,166,0.1)] w-full sm:w-auto justify-center sm:justify-start">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-teal-400 to-emerald-500 text-black font-mono text-xs font-bold">
+                02
+              </span>
+              <div>
+                <p className="text-xs font-bold text-teal-300 font-mono">Approve</p>
+                <p className="text-[10px] text-zinc-400 font-sans leading-none mt-0.5">Moderate & select feedback</p>
+              </div>
+            </div>
+
+            {/* Connector */}
+            <div className="hidden sm:flex items-center text-teal-400/35 font-semibold text-sm tracking-tighter animate-pulse select-none">
+              ────────➔
+            </div>
+            <div className="sm:hidden text-teal-400/35 animate-pulse text-sm select-none">
+              ▼
+            </div>
+
+            {/* Step C: Publish */}
+            <div className="flex items-center gap-3 bg-zinc-900/60 pl-3 pr-4 py-2.5 rounded-xl border border-white/5 w-full sm:w-auto justify-center sm:justify-start">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 font-mono text-xs font-bold border border-emerald-500/20">
+                03
+              </span>
+              <div>
+                <p className="text-xs font-bold text-white font-mono">Publish</p>
+                <p className="text-[10px] text-zinc-500 font-sans leading-none mt-0.5">Instant live widget sync</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   );

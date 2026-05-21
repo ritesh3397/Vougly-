@@ -1,79 +1,6 @@
 import { Testimonial, PainPoint, Step, Feature, PricingPlan, FAQItem } from './types.ts';
 
-export const INITIAL_TESTIMONIALS: Testimonial[] = [
-  {
-    id: 't1',
-    name: 'Aniket Sharma',
-    role: 'SaaS Founder',
-    company: 'DevFlow Systems',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&fit=crop&q=80',
-    rating: 5,
-    text: 'Vouchly ne hamare conversions 32% improve kar diye! Mere product launch par humne 15 minutes mein video testimonials collect kar liye. One link magic is real!',
-    platform: 'vouchly',
-    timeAgo: '2 hours ago',
-    isFeatured: true,
-  },
-  {
-    id: 't2',
-    name: 'Pooja Mehta',
-    role: 'Product Marketer',
-    company: 'GrowRapid Agency',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&fit=crop&q=80',
-    rating: 5,
-    text: 'Ab reviews collect karne ke liye clients ko baar-baar spam nahi karna padta. Vouchly sends gentle reminders automatically. Website embed visual representation extremely premium lagta hai!',
-    platform: 'twitter',
-    timeAgo: '1 day ago',
-    isFeatured: true,
-  },
-  {
-    id: 't3',
-    name: 'Vikram Grover',
-    role: 'High-Ticket Coach',
-    company: 'Solopreneur Elite',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&fit=crop&q=80',
-    rating: 5,
-    text: 'My business runs on trust. Video testimonials are the ultimate weapon. Vouchly ka built-in screen & camera recorder is flawless — direct browser se custom videos high quality mein save ho jaati hain.',
-    platform: 'vouchly',
-    timeAgo: '3 days ago',
-    isFeatured: true,
-  },
-  {
-    id: 't4',
-    name: 'Sahil Kapoor',
-    role: 'E-commerce Operator',
-    company: 'D2C Threads',
-    avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150&fit=crop&q=80',
-    rating: 5,
-    text: 'Manual screenshots are dead! Beautiful wall-of-love widget directly matches our brand branding guidelines. Seamless, responsive layout on iOS and Android.',
-    platform: 'google',
-    timeAgo: '5 days ago',
-    isFeatured: false,
-  },
-  {
-    id: 't5',
-    name: 'Neha Singhal',
-    role: 'Co-founder',
-    company: 'HyperScale AI',
-    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&fit=crop&q=80',
-    rating: 5,
-    text: 'AI Question Suggestion feature is genius. Customers often don\'t know what to write. The dynamic guidance helps them pen down spectacular metric-focused reviews instantly.',
-    platform: 'linkedin',
-    timeAgo: '1 week ago',
-    isFeatured: true,
-  },
-  {
-    id: 't6',
-    name: 'Kabir Dev',
-    role: 'Freelance UI/UX Developer',
-    company: 'Studio Arc',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&fit=crop&q=80',
-    rating: 5,
-    text: 'Vouchly code integration takes 20 seconds. Literally copied the iframe embed tag, pasted it in custom Webflow dashboard, and clean interactive feedback popped up! Best investment this year.',
-    platform: 'vouchly',
-    timeAgo: '1 week ago',
-    isFeatured: false,
-  }
-];
+export const INITIAL_TESTIMONIALS: Testimonial[] = [];
 
 export const PAIN_POINTS: PainPoint[] = [
   {
@@ -116,24 +43,24 @@ export const PAIN_POINTS: PainPoint[] = [
 export const HOW_IT_WORKS_STEPS: Step[] = [
   {
     id: 1,
-    title: 'Unique Review Link Banao',
-    subtitle: 'Vouchly.co/your-brand',
-    description: 'Customize a gorgeous custom review-collection landing page with your logo, brand guidelines, and target questions. No technical expertise required.',
-    badge: 'Step 1: One-Click'
+    title: 'Link Banao 🔗',
+    subtitle: 'Step 1: One-Click Generator',
+    description: 'Business apna testimonial collection link create karta hai. Customize it with your brand assets and targeted feedback queries.',
+    badge: 'Step 1: Link Banao'
   },
   {
     id: 2,
-    title: 'Customers Easily Review Bhejein',
-    subtitle: 'Browser-driven submission',
-    description: 'With a simplified flow, clients submit high-quality video or polished text reviews directly on smartphones or web in single taps, backed by smart AI guidance prompts.',
-    badge: 'Step 2: Smooth Flow'
+    title: 'Customer Ko Bhejo 📩',
+    subtitle: 'Step 2: Dual Distribution Channels',
+    description: 'WhatsApp, email, ya social media se link share karo. Customers record high quality video or pen text easily without downloading apps.',
+    badge: 'Step 2: Customer Ko Bhejo'
   },
   {
     id: 3,
-    title: 'Website Pe Auto Show Karo',
-    subtitle: 'One Script Embed',
-    description: 'Copy a simple line of script code, paste on your custom dashboard, and reviews will show up on our modern, responsive Masonry, Wall of Love or Carousel view instantly.',
-    badge: 'Step 3: Instant Profit'
+    title: 'Reviews Auto-Publish ✅',
+    subtitle: 'Step 3: Instant Live Sync',
+    description: 'Reviews automatically website widgets mein show ho jaate hain. Zero coding required to update and design the layout.',
+    badge: 'Step 3: Reviews Auto-Publish'
   }
 ];
 
@@ -206,13 +133,12 @@ export const PRICING_PLANS: PricingPlan[] = [
     priceAnnually: 0,
     currency: '₹',
     period: 'mo',
-    description: 'For hobbyists, freelancers, and early-stage pre-revenue testing creators.',
+    description: 'For hobbyists and early-stage testing creators.',
     features: [
-      'Up to 10 Text Testimonials',
-      '1 Video Testimonial collection',
-      'Basic Wall of Love widget',
-      'Vouchly branding link in widgets',
-      'Standard email support'
+      '15 reviews limit',
+      '1 collection form',
+      'Basic wall of love widget',
+      'Standard customer support'
     ],
     ctaText: 'Free Mein Start Karo',
     popular: false
@@ -223,16 +149,14 @@ export const PRICING_PLANS: PricingPlan[] = [
     priceAnnually: 319,
     currency: '₹',
     period: 'mo',
-    description: 'Perfect for local brands, boutiques, agency founders, and digital creators looking to gather trust.',
+    description: 'Perfect for local brands, boutiques, and digital builders.',
     features: [
-      'Unlimited Text Testimonials',
-      'Up to 5 Video Testimonial collection',
-      '3 beautiful glass custom widgets',
-      'Remove Vouchly platform branding',
-      'AI-powered feedback prompt generator',
-      'Priority live email support'
+      '100 reviews limit',
+      '3 collection forms',
+      'Remove Vouchly branding brandings',
+      'Priority email response'
     ],
-    ctaText: 'Starter Plan Ready',
+    ctaText: 'Starter Plan Join Karo',
     popular: false
   },
   {
@@ -241,14 +165,12 @@ export const PRICING_PLANS: PricingPlan[] = [
     priceAnnually: 719,
     currency: '₹',
     period: 'mo',
-    description: 'Full-fledged dashboard featuring WhatsApp automation and AI sentiment analytics. Crucial for fast growth.',
+    description: 'Advanced dashboard with smart auto-followup engines.',
     features: [
-      'Unlimited Text & Video Testimonials',
-      'Unlimited Wall of Love, Widget embeds & Carousels',
-      'WhatsApp Review reminders',
-      'Full AI assistance, prompts, sentiments & templates',
-      'Custom branding colors, domains & tags',
-      'Dedicated Customer Success manager'
+      'Unlimited reviews collection',
+      'AI-generated targeted questions',
+      'CSV sheets database export',
+      'Priority 1-on-1 customer support'
     ],
     ctaText: 'Get Pro Access Now',
     popular: true,
@@ -260,13 +182,12 @@ export const PRICING_PLANS: PricingPlan[] = [
     priceAnnually: 1599,
     currency: '₹',
     period: 'mo',
-    description: 'Built for agencies, marketing networks, high-ticket studios, and multi-business builders.',
+    description: 'Built for marketing networks, high-ticket studios & agency models.',
     features: [
-      'Manage up to 10 Client Dashboards',
-      'Multi-team access workspace roles',
-      'White-label review collection widgets',
-      'Custom API webhooks, JSON schemas & CSV streams',
-      'Priority 1-on-1 Zoom integration onboarding'
+      '10 client workspaces access',
+      'White-label customized widgets',
+      'Team access controls dashboard roles',
+      'Advanced conversion sentiment analytics'
     ],
     ctaText: 'Scale Up Your Agency',
     popular: false

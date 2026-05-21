@@ -187,14 +187,43 @@ export default function InteractiveWidgetBuilder({ testimonials, onOpenSubmissio
               </div>
 
               {filteredTestimonials.length === 0 ? (
-                <div className="text-center py-16">
-                  <p className="text-sm text-zinc-500 font-mono">No testimonials match your query.</p>
-                  <button 
-                    onClick={() => setSearchQuery('')}
-                    className="mt-2 text-xs text-teal-400 font-bold hover:underline"
-                  >
-                    Clear Search
-                  </button>
+                <div className="text-center py-16 px-4 space-y-6">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/20">
+                    <Sparkles className="h-6 w-6 animate-pulse" />
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className={`text-xl font-display font-black tracking-tight ${theme === 'light' ? 'text-zinc-950' : 'text-white'}`}>
+                      Launching Soon
+                    </h4>
+                    <p className={`text-xs max-w-md mx-auto ${theme === 'light' ? 'text-zinc-600' : 'text-zinc-400'}`}>
+                      Be the first to share your experience — launching soon. Click <strong>"Try Submitting a Testimonial"</strong> on the left control panel to see the widget auto-populate instantly!
+                    </p>
+                  </div>
+
+                  {/* Optional small placeholder avatars pile */}
+                  <div className="flex flex-col items-center gap-2 pt-2">
+                    <div className="flex items-center -space-x-2">
+                      {[
+                        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&fit=crop&q=80',
+                        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&fit=crop&q=80',
+                        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&fit=crop&q=80'
+                      ].map((url, idx) => (
+                        <img 
+                          key={idx} 
+                          src={url} 
+                          alt="Early user" 
+                          referrerPolicy="no-referrer"
+                          className="h-8 w-8 rounded-full object-cover border-2 border-zinc-950 shadow" 
+                        />
+                      ))}
+                      <div className="h-8 w-8 rounded-full bg-gradient-to-r from-teal-500 to-emerald-500 flex items-center justify-center text-[10px] font-mono text-black font-bold border-2 border-zinc-950 shadow">
+                        +500
+                      </div>
+                    </div>
+                    <p className={`text-[10px] font-mono tracking-wider ${theme === 'light' ? 'text-zinc-500' : 'text-zinc-500'}`}>
+                      Early users joining now • Spot reserved
+                    </p>
+                  </div>
                 </div>
               ) : (
                 <motion.div 
