@@ -1,0 +1,6 @@
+{
+  "name": "Vouchly",
+  "description": "Convert happy customers into social proof with one-click testimonial review collection, AI insights, and beautiful wall of love widgets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
