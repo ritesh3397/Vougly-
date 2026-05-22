@@ -1,6 +1,6 @@
 {
-  "name": "Vouchly",
-  "description": "Convert happy customers into social proof with one-click testimonial review collection, AI insights, and beautiful wall of love widgets.",
+  "name": "Wallovo",
+  "description": "Collect testimonials. Build trust. Increase conversions. Wallovo helps businesses collect customer reviews automatically and turn them into powerful social proof widgets.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

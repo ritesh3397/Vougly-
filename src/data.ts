@@ -128,22 +128,6 @@ export const PRODUCT_FEATURES: Feature[] = [
 
 export const PRICING_PLANS: PricingPlan[] = [
   {
-    name: 'Free',
-    price: 0,
-    priceAnnually: 0,
-    currency: '₹',
-    period: 'mo',
-    description: 'For hobbyists and early-stage testing creators.',
-    features: [
-      '15 reviews limit',
-      '1 collection form',
-      'Basic wall of love widget',
-      'Standard customer support'
-    ],
-    ctaText: 'Free Mein Start Karo',
-    popular: false
-  },
-  {
     name: 'Starter',
     price: 399,
     priceAnnually: 319,
@@ -153,7 +137,7 @@ export const PRICING_PLANS: PricingPlan[] = [
     features: [
       '100 reviews limit',
       '3 collection forms',
-      'Remove Vouchly branding brandings',
+      'Remove Wallovo branding',
       'Priority email response'
     ],
     ctaText: 'Starter Plan Join Karo',
@@ -177,7 +161,7 @@ export const PRICING_PLANS: PricingPlan[] = [
     badge: 'MOST POPULAR'
   },
   {
-    name: 'Agency',
+    name: 'Business',
     price: 1999,
     priceAnnually: 1599,
     currency: '₹',
@@ -189,23 +173,23 @@ export const PRICING_PLANS: PricingPlan[] = [
       'Team access controls dashboard roles',
       'Advanced conversion sentiment analytics'
     ],
-    ctaText: 'Scale Up Your Agency',
+    ctaText: 'Scale Up Your Business',
     popular: false
   }
 ];
 
 export const FAQ_DATA: FAQItem[] = [
   {
-    question: 'Kya Vouchly use karne ke liye coding knowledge ki zarurat hai?',
+    question: 'Kya Wallovo use karne ke liye coding knowledge ki zarurat hai?',
     answer: 'Nahi, bilkul nahi! Aapko sirf 1 static line of code copy-paste karna padega apni site par. Ye Webflow, Framer, Wix, WordPress, Custom React, Shopify ya kisi bhi platform par instant kam karta hai.'
   },
   {
     question: 'Kya video testimonials support karta hai?',
-    answer: 'Haan! Vouchly specializes in high-quality web-based video review recordings. Aapka customer directly phone ya desktop screen se video record kar ke submit kar sakta hai — no software download required.'
+    answer: 'Haan! Wallovo specializes in high-quality web-based video review recordings. Aapka customer directly phone ya desktop screen se video record kar ke submit kar sakta hai — no software download required.'
   },
   {
-    question: 'Free plan mein kya-kya milta hai?',
-    answer: 'Free plan mein aap unlimited collect link bana sakte hain, up to 10 text reviews select kar sakte hain, plus 1 video review and 1 standard widget design launch kar sakte hain.'
+    question: 'Starter plan mein kya-kya milta hai?',
+    answer: 'Starter plan mein aap 100 reviews collect kar sakte hain, 3 beautiful collection forms launch kar sakte hain, plus logo branding remove kar sakte hain.'
   },
   {
     question: 'WhatsApp integration kaam kaise karta hai?',
@@ -213,6 +197,6 @@ export const FAQ_DATA: FAQItem[] = [
   },
   {
     question: 'Hum reviews other social sources se import kar sakte hain?',
-    answer: 'Haan! Vouchly Pro provides a single panel to import real-time feedback from Twitter posts, LinkedIn, Play Store, Trustpilot, and G2 into your centralized glass cabinet dashboard in 1 click.'
+    answer: 'Haan! Wallovo Pro provides a single panel to import real-time feedback from Twitter posts, LinkedIn, Play Store, Trustpilot, and G2 into your centralized glass cabinet dashboard in 1 click.'
   }
 ];
