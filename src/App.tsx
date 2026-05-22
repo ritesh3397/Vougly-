@@ -68,6 +68,9 @@ export default function App() {
         onScrollToPreview={handleScrollToPreview} 
       />
 
+      {/* Waitlist Early Access */}
+      <WaitlistSection />
+
       {/* Problem Section: Warn regarding manual layouts */}
       <ProblemSection />
 
@@ -88,9 +91,6 @@ export default function App() {
 
       {/* AI Smart showcase section */}
       <AIShowcase />
-
-      {/* Waitlist Early Access */}
-      <WaitlistSection />
 
       {/* Pricing options */}
       <PricingSection onSelectPlan={(planName) => {
